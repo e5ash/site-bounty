@@ -43,40 +43,22 @@
           box-sizing: border-box; }
 
 body {
-  font: 16px "Tahoma", sans-serif;
+  font-size: 16px;
+  font-family: "GothamPro", sans-serif;
   color: #000;
   background: white;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: normal; }
-
-h1 {
-  font-size: 24px; }
-
-h2 {
-  font-size: 20px; }
-
-h3 {
-  font-size: 16px; }
-
-h4 {
-  font-size: 14px; }
-
-h5 {
-  font-size: 12px; }
-
-h6 {
-  font-size: 10px; }
+  font-size: inherit;
+  font-weight: inherit; }
 
 ul {
   font-size: 0; }
   ul li {
-    font-size: 16px; }
-  ul.li_line li {
-    display: inline-block; }
-  ul.li_reset li {
+    font-size: 16px;
+    display: inline-block;
     list-style-type: none; }
 
 span {
@@ -86,12 +68,9 @@ span {
 a {
   color: #000;
   text-decoration: none;
-  border-bottom: 1px solid transparent; }
-
-/* Button */
-button, input[type="button"], input[type="reset"] {
-  background: none;
-  cursor: pointer; }
+  border-bottom: 1px solid transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
 
 .button {
   display: inline-block;
@@ -99,54 +78,11 @@ button, input[type="button"], input[type="reset"] {
   background: white;
   padding: 5px 10px;
   cursor: pointer;
-  font: 16px "Tahoma", sans-serif; }
-  .button:hover {
-    background: #EBEBEB; }
-  .button.button_block {
-    display: block; }
+  font-size: 16px;
+  font-family: "GothamPro", sans-serif; }
 
 /* Input */
 .input {
   display: inline-block;
   padding: 5px 10px;
   border: 1px solid gray; }
-  .input:active {
-    border: 1px solid #00B7FF;
-    -webkit-transition: border-color 0.3s;
-    transition: border-color 0.3s; }
-  .input .input_block {
-    display: block; }
-
-/* Textarea */
-.textarea {
-  display: block;
-  padding: 5px 10px;
-  border: 1px solid gray;
-  resize: none;
-  font: 16px "Tahoma", sans-serif; }
-  .textarea:active {
-    border: 1px solid #00B7FF;
-    -webkit-transition: border-color 0.3s;
-    transition: border-color 0.3s; }
-
-/* Radio */
-.radio .radio__input {
-  display: none; }
-
-.radio .radio__label {
-  display: block; }
-  .radio .radio__label:before {
-    content: '';
-    display: inline-block;
-    margin-right: 10px; }
-
-/* Checkbox */
-.checkbox .checkbox__input {
-  display: none; }
-
-.checkbox .checkbox__label {
-  display: block; }
-  .checkbox .checkbox__label:before {
-    content: '';
-    display: inline-block;
-    margin-right: 10px; }

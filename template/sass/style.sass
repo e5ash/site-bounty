@@ -3,7 +3,7 @@
 
 $color-1: #000
 $font-size: 16px
-$font-family-1: 'Tahoma', sans-serif
+$font-family-1: 'GothamPro', sans-serif
 $transition-speed: .3s
 
 *
@@ -13,7 +13,8 @@ $transition-speed: .3s
 	box-sizing: border-box
 
 body
-	font: $font-size $font-family-1
+	font-size: $font-size
+	font-family: $font-family-1
 	color: $color-1
 	background: white
 	box-sizing: border-box
@@ -27,13 +28,8 @@ ul
 	font-size: 0
 	li
 		font-size: $font-size
-	&.li_line
-		li
-			display: inline-block
-
-	&.li_reset
-		li
-			list-style-type: none
+		display: inline-block
+		list-style-type: none
 
 
 
@@ -49,22 +45,15 @@ a
 	transition: $transition-speed
 
 
-/* Button */
-button, input[type="button"], input[type="reset"]
-	background: none
-	cursor: pointer
-
 .button
 	display: inline-block
 	color: $color-1
 	background: white
 	padding: 5px 10px
 	cursor: pointer
-	font: $font-size $font-family-1
-	&:hover
-		background: #EBEBEB
-	&.button_block
-		display: block
+	font-size: $font-size
+	font-family: $font-family-1
+	
 
 
 /* Input */
@@ -72,20 +61,5 @@ button, input[type="button"], input[type="reset"]
 	display: inline-block
 	padding: 5px 10px
 	border: 1px solid gray
-	&:active
-		border: 1px solid #00B7FF
-		transition: border-color $transition-speed
-	.input_block
-		display: block
+	
 
-
-/* Textarea */
-.textarea
-	display: block
-	padding: 5px 10px
-	border: 1px solid gray
-	resize: none
-	font: $font-size $font-family-1
-	&:active
-		border: 1px solid #00B7FF
-		transition: border-color $transition-speed
