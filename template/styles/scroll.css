@@ -1,0 +1,12 @@
+#popup-agreements{
+	display: none;
+}
+#popup-agreements ::-webkit-scrollbar{
+	background: #dedede;
+	border-radius: 20px;
+	width: 14px;
+}
+#popup-agreements ::-webkit-scrollbar-thumb{
+	background: #50992f;
+	border-radius: 20px;
+}

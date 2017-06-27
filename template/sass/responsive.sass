@@ -1,4 +1,318 @@
-@media screen and (max-width: 768px)
-	.w2, .w3, .w4, .w5, .w6
-		.col
+@media screen and (max-width: 1160px)
+	.header
+		background-position-x: 130%
+@media screen and (max-width: 1040px)
+	.calc
+		&__wrap
+			margin-left: 0
+			margin-right: 0
+			&:after
+				display: none
+
+@media screen and (max-width: 970px)
+	.header
+		background-position-x: 160%
+	.footer
+		&__desc, &__contacts
+			margin-bottom: 25px
+			width: 50%
+			margin-right: 0
+@media screen and (max-width: 940px)
+	.about
+		&__text
+			width: calc(100% - 240px)
+		&__steps
 			width: 100%
+	.step
+		&__count
+			left: -15px !important
+	.footer
+		&__copy
+			line-height: 16px
+			.hidden-br
+				display: block
+		&__dev
+			margin-left: 0
+			float: right
+
+@media screen and (max-width: 890px)
+	.header
+		background-position-x: 210%
+	.calc
+		&__wrap
+			margin-left: -15px
+			margin-right: -15px
+			border-left: none
+			border-right: none
+			padding: 27px 15px
+@media screen and (max-width: 810px)
+	.header
+		background-position-x: 250%
+	.form
+		background-image: none
+		&__title
+			&:before, &:after
+				width: 15%
+			&:before
+				left: -15px
+			&:after
+				right: -15px
+		&__wrap
+			padding-left: 15px
+			padding-right: 15px
+@media screen and (max-width: 767px)
+	.header
+		background-position-x: 700%
+		padding-bottom: 130px
+		background-size: 90%
+		&__title
+			font-size: 35px
+			line-height: 40px
+			margin-bottom: 20px
+		&__content
+			max-width: 290px
+			margin-left: auto
+			margin-right: auto
+		&__city
+			font-size: 28px
+			margin-bottom: 25px
+		&__text
+			font-size: 14px
+			margin-bottom: 40px
+		&__button
+			max-width: 290px
+			position: relative
+			line-height: 21px
+			height: auto
+			text-align: left
+			padding-left: 55px
+			margin-left: auto
+			margin-right: auto
+			img
+				position: absolute
+				top: 24px
+				left: 38px
+
+
+	.panel
+		margin-bottom: 34px
+	.logo
+		float: none
+		margin-left: auto
+		margin-right: auto
+
+	.feedback
+		float: none
+		padding-top: 24px
+		text-align: center
+		.button
+			margin-left: auto
+			margin-right: auto
+			background-image: linear-gradient(to top, #5d942a 0%, #70ae36 100%)
+
+	.certificates
+		margin-bottom: 39px
+		&__title
+			margin-bottom: 22px
+		&__all
+			margin-top: 15px
+	.download
+		display: none
+
+	.schedule
+		margin-bottom: 35px
+		&__desc
+			line-height: 17px
+			margin-bottom: 19px
+		&__table
+			font-size: 0
+			.col
+				float: none
+				display: inline-block
+				width: 50%
+				font-size: 13px
+				margin-bottom: 10px
+		&__item
+			border-left: 2px solid white
+			border-right: 2px solid white
+@media screen and (max-width: 710px)
+	.calc
+		&__table
+			> .col
+				float: none
+				width: 100%
+		&__result
+			margin-top: 39px
+	.result
+		&__wrap
+			width: 100%
+		&__error
+			position: relative
+			
+			background: white
+			padding-right: 5px
+@media screen and (max-width: 690px)
+	.header
+		background-position-x: 2250%
+		background-size: 97%
+	.gallery
+		padding-left: 15px
+		padding-right: 15px
+		padding-bottom: 31px
+		border-top: 1px solid #e1dcd7
+		margin-top: 11px
+		&__title
+			font-size: 20px
+			&:after
+				margin-bottom: 37px
+		&__item
+			padding: 0 !important
+			margin-left: 0 !important
+			margin-right: 0 !important
+			border: none !important
+			img
+				opacity: 1 !important
+				width: 100% !important
+				max-width: 100%
+		&__arrows
+			.slick-prev
+				left: 8px
+			.slick-next
+				right: 8px
+
+			.slick-arrow
+				width: 45px
+				height: 45px
+				img
+					width: 20px
+					height: 20px
+
+		&__text
+			p
+				display: block
+				width: 100%
+				text-align: left !important
+				&:first-of-type
+					margin-bottom: 13px
+	.form
+		&__title
+			font-size: 20px
+			&:before, &:after
+				display: none
+
+		&__wrap
+			border: none
+			padding: 0
+		&__buton
+			display: block
+		&__regulations
+			display: block
+			padding-top: 19px
+
+	.elements
+		margin-bottom: 0
+		&__item
+			float: none
+			margin-bottom: 26px
+			&:first-of-type
+				margin-right: 0
+				.input
+					width: 100%
+					max-width: 321px
+
+	.footer
+		&__top
+			padding-top: 31px
+
+		&__desc, &__contacts
+			width: 100%
+			float: none
+
+	.address
+		&__link
+			a
+				border-color: #046383
+@media screen and (max-width: 645px)
+	.header
+		background-position-x: 400px
+		background-size: 115%
+@media screen and (max-width: 590px)
+	.header
+		background-position-x: 350px
+		background-size: 120%
+
+
+@media screen and (max-width: 560px)
+	.about
+		.col
+			float: none
+		&__text
+			width: 100%
+			padding-left: 27px
+			margin-top: 35px
+			padding-right: 27px
+			&:before
+				left: 0
+	.persona
+		&__name
+			margin-bottom: 15px
+	.steps
+		padding-left: 27px
+		padding-right: 27px
+@media screen and (max-width: 525px)
+	.header
+		background-position-x: 300px
+		background-size: auto 100%
+	.footer
+		&__bottom
+			padding-top: 22px
+			padding-bottom: 26px
+		&__copy, &__dev
+			float: none
+		&__copy
+			margin-bottom: 10px
+@media screen and (max-width: 465px)
+	.popup
+		width: 95%
+		background-image: none !important
+		padding-left: 10px
+		padding-right: 10px
+		.input
+			margin-bottom: 15px
+		.input, .button
+			display: block
+			width: 100%
+			margin-left: auto
+			margin-right: auto
+			max-width: 290px
+	.header
+		background-position-x: 250px
+	
+@media screen and (max-width: 410px)
+	.header
+		background-position-x: 200px
+
+@media screen and (max-width: 390px)
+	.result__table
+		.col
+			padding: 15px 5px
+			&#imt, &#massa
+				padding-top: 13px
+			&#imt
+				font-size: 30px
+			&#massa
+				font-size: 20px
+				span
+					font-size: 30px
+@media screen and (max-width: 350px)
+	.header
+		background-position-x: 150px
+
+	.about__text
+		padding-right: 2px
+	.certificate
+		width: 145px
+		height: 205px
+		line-height: 205px
+		border: none !important
+		margin-bottom: 10px

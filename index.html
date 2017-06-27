@@ -21,7 +21,7 @@
 					<div class="phone__title">справки и запись по телефону</div>
 					<div class="phone__value"><a href="tel:+7 (423) 220-52-85">+7 (423) 220-52-85</a></div>
 				</div>
-				<div class="callback button button-xs">записаться на сеанс</div>
+				<a data-fancybox data-src="#popup-callback" href="javascript:;" class="callback button button-xs">записаться на сеанс</a>
 			</div>
 		</div>
 		<div class="header__content">
@@ -29,7 +29,7 @@
 			<div class="header__city">во Владивостоке</div>
 			<div class="header__text">Стройная, подтянутая фигура – мечта любой женщины. Война с лишними килограммами ведется постоянно, и не видно ей конца и края.</div>
 		</div>
-		<div class="header__button button button-lg"><img src="upload/icons/ves.svg" alt=""><span>рассчитать ваш идеальный вес</span></div>
+		<a href="#calc" class="header__button button button-lg"><img src="upload/icons/ves.svg" alt=""><span>рассчитать ваш идеальный вес</span></a>
 	</div>
 </div>
 <div class="main">
@@ -40,7 +40,7 @@
 				<div class="persona__name">Игнатьева <br />Ольга</div>
 				<div class="persona__desc">врач-психотерапевт</div>
 				<div class="persona__text">кандидат медицинских наук, и какие то ещё заслуги напишем тут вот</div>
-				<div class="persona__button button button-xs">записаться на сеанс</div>
+				<a data-fancybox data-src="#popup-callback" href="javascript:;" class="persona__button button button-xs">записаться на сеанс</a>
 			</div>
 			<div class="about__text col">Кодирование от лишнего веса получило признание в 1985 году, когда Министерство здравоохранения официально закрепило за психотерапевтическими методами лечения право на существование. В то время в стране проходила антиалкогольная компания, и власти были готовы дать путевку в жизнь любому методу, способному помочь народу преодолеть пагубную привычку. Сегодня можно закодироваться не только от тяги к спиртным напиткам, любая вредная зависимость отступает под влиянием профессиональных кодировщиков. Извечное желание людей получить все и сразу делает кодирование, способное за минимальное количество сеансов отбить охоту к дурным привычкам, популярным среди населения.</div>
 			<div class="about__steps steps col">
@@ -69,12 +69,18 @@
 				<a href="upload/certificates/3.png" data-fancybox="certificates" class="certificate"><img src="upload/certificates/3.png" alt=""></a>
 				<a href="upload/certificates/1.png" data-fancybox="certificates" class="certificate"><img src="upload/certificates/1.png" alt=""></a>
 				<a href="upload/certificates/2.png" data-fancybox="certificates" class="certificate"><img src="upload/certificates/2.png" alt=""></a>
+				<a href="upload/certificates/1.png" data-fancybox="certificates" class="certificate"><img src="upload/certificates/1.png" alt=""></a>
+				<a href="upload/certificates/2.png" data-fancybox="certificates" class="certificate"><img src="upload/certificates/2.png" alt=""></a>
+				<a href="upload/certificates/3.png" data-fancybox="certificates" class="certificate"><img src="upload/certificates/3.png" alt=""></a>
+				<a href="upload/certificates/3.png" data-fancybox="certificates" class="certificate"><img src="upload/certificates/3.png" alt=""></a>
+				<a href="upload/certificates/1.png" data-fancybox="certificates" class="certificate"><img src="upload/certificates/1.png" alt=""></a>
+				<a href="upload/certificates/2.png" data-fancybox="certificates" class="certificate"><img src="upload/certificates/2.png" alt=""></a>
 			</div>
 			<div class="certificates__all"><span>показать ещё</span></div>
 			<div class="certificates__desc"><i class="icon icon-magniffic-glass"></i><span>кликните на изображение для просмотра</span></div>
 		</div>
 	</div>
-	<div class="calc">
+	<div class="calc" id="calc">
 		<div class="container">
 			<div class="calc__wrap">
 				<div class="calc__title">Рассчитайте ваш <span>идеальный вес</span></div>
@@ -125,12 +131,18 @@
 									</div>
 									<div class="row w2">
 										<div class="col" id="imt">25.4</div>
-										<div class="col" id="massa">54 <span>кг</span></div>
+										<div class="col" id="massa"><span>54</span> кг</div>
 									</div>
 								</div>
-								<p>ИМТ в диапазоне 18,5-24,9 указывает на здоровый вес. Нужно постараться, чтобы ИМТ находился в середине этого диапазона, что даст возможность иметь наиболее привлекательную фигуру и быть подальше от шансов выйти за рамки.</p>
+								<p></p>
 							</div>
 							<div class="result__error">Укажите верное значение в поле: <p></p></div>
+							<div class="result-text result-text_1">Ваш ИМТ меньше 18,5, то это свидетельствует о недостаточном весе. Необходимо больше питаться. Возможно следует пойти к диетологу или даже терапевту, зависимо от размера недостатка веса.</div>
+							<div class="result-text result-text_2">ИМТ в диапазоне 18,5-24,9 указывает на здоровый вес. Нужно постараться, чтобы ИМТ находился в середине этого диапазона, что даст возможность иметь наиболее привлекательную фигуру и быть подальше от шансов выйти за рамки.</div>
+							<div class="result-text result-text_3">наблюдается избыточный вес. Это еще не ожирение, но нужно уменьшить вес тела. Это не просто вопрос эстетики и внешности, но и ваше здоровье.</div>
+							<div class="result-text result-text_4">ИМТ в диапазоне 30-34,9 – ожирением первой степени. При наличии такого ожирения увеличиваются почти в два раза шансы пострадать от сахарного диабета, болезней сердца, атеросклероза.</div>
+							<div class="result-text result-text_5">ИМТ в диапазоне 35-39,9 указывает на ожирения второй степени. Следует обратиться за консультацией к врачу-специалисту, чтобы начать снижения веса.</div>
+							<div class="result-text result-text_6">Если ИМТ выше 40, то это уже третья степень ожирение, которая серьезно угрожает жизни. Следует прибегнуть к диете под контролем врача. Такое ожирение угрожает нормальному функционированию организма.</div>
 						</div>
 					</div>
 				</div>
@@ -142,7 +154,7 @@
 			<div class="download__wrap">
 				<div class="download__icon"><img src="upload/icons/download.svg" alt=""></div>
 				<div class="download__content">
-					<div class="download__title"><a href="">скачать таблицу калорийности продуктов</a></div>
+					<div class="download__title"><a href="" download="download">скачать таблицу калорийности продуктов</a></div>
 					<div class="download__desc">формат pdf, 350 Кб.</div>
 				</div>
 			</div>
@@ -152,28 +164,28 @@
 		<div class="gallery__title">ГАЛЕРЕЯ РЕЗУЛЬТАТОВ</div>
 		<div class="gallery__list">
 			<div class="gallery__item">
-				<div class="gallery__img"><img src="upload/gallery/1.png" alt=""></div>
+				<a href="upload/gallery/1.png" data-fancybox="gallery" class="gallery__img"><img src="upload/gallery/1.png" alt=""></a>
 				<div class="gallery__text">
 					<p>Диана Иванова, 34 года</p>
 					<p>1 год после сеанса</p>
 				</div>
 			</div>
 			<div class="gallery__item">
-				<div class="gallery__img"><img src="upload/gallery/1.png" alt=""></div>
+				<a href="upload/gallery/1.png" data-fancybox="gallery" class="gallery__img"><img src="upload/gallery/1.png" alt=""></a>
 				<div class="gallery__text">
 					<p>Диана Иванова, 34 года</p>
 					<p>1 год после сеанса</p>
 				</div>
 			</div>
 			<div class="gallery__item">
-				<div class="gallery__img"><img src="upload/gallery/1.png" alt=""></div>
+				<a href="upload/gallery/1.png" data-fancybox="gallery" class="gallery__img"><img src="upload/gallery/1.png" alt=""></a>
 				<div class="gallery__text">
 					<p>Диана Иванова, 34 года</p>
 					<p>1 год после сеанса</p>
 				</div>
 			</div>
 			<div class="gallery__item">
-				<div class="gallery__img"><img src="upload/gallery/1.png" alt=""></div>
+				<a href="upload/gallery/1.png" data-fancybox="gallery" class="gallery__img"><img src="upload/gallery/1.png" alt=""></a>
 				<div class="gallery__text">
 					<p>Диана Иванова, 34 года</p>
 					<p>1 год после сеанса</p>
@@ -231,12 +243,12 @@
 					</div>
 					<div class="elements__item col">
 						<p class="form__subtitle">Телефон</p>
-						<input type="text" class="elements__input input input-phone">
+						<input type="text" class="elements__input input input-phone" placeholder="+7 (   )    -  -  ">
 					</div>
 				</div>
 				<div class="form__submit">
 					<button class="form__button button button-xs">отправить</button>
-					<div class="form__regulations">нажимая кнопку “отправить” вы принимаете <br />соглашение на <a href="">обработку информации</a></div>
+					<div class="form__regulations">нажимая кнопку “отправить” вы принимаете <br />соглашение на <a href="#popup-agreements" href="javascript;;" data-fancybox>обработку информации</a></div>
 				</div>
 			</div>
 		</div>
@@ -267,7 +279,7 @@
 	<div class="footer__bottom">
 		<div class="container">
 			<div class="row">
-				<div class="footer__copy col">2017 © Кодирование от лишнего веса. <br class="hidden-br" />Центр эстетической медицины Bounty. Все права защищены.</div>
+				<div class="footer__copy col">2017 © Кодирование от лишнего веса. <br class="hidden-br" />Центр эстетической медицины Bounty. <br class="hidden-br" />Все права защищены.</div>
 				<div class="footer__dev col">Разработка сайта - <a href="//kefirok.ru" target="_blank">Студия Кефирок.</a></div>
 			</div>
 		</div>
@@ -278,21 +290,21 @@
 	<div class="popup__title">ОБРАТНЫЙ ЗВОНОК</div>
 	<div class="popup__text">Укажите свой номер телефона, <br />и мы вам перезвоним сами.</div>
 	<div class="popup__elements">
-		<input type="text" class="input input-phone">
+		<input type="text" class="input input-phone" placeholder="+7 (   )    -  -  ">
 		<button class="button button-xs">отправить</button>
 	</div>
 </div>
 <div class="popup" id="popup-successful">
 	<div class="popup__title">ЗАПРОС ОТПРАВЛЕН</div>
 	<div class="popup__text">Ваш запрос успешно отправлен. <br />Мы свяжемся с вами в ближайшее время.</div>
-	<div class="popup__close"><span>закрыть сообщение</span></div>
+	<div class="popup__close"><span data-fancybox-close>закрыть сообщение</span></div>
 </div>
 <div class="popup" id="popup-agreements">
 	<div class="popup__title">Пользовательское соглашение на обработку информации</div>
-	<div class="popup__wrapper">
+	<div class="popup__wrap">
 		<p>Политическая коммуникация принципиально неизмерима. Механизм власти, в случае использования адаптивно-ландшафтных систем земледелия, неизменяем. Если принять во внимание физическую неоднородность почвенного индивидуума, можно прийти к выводу о том, что форма политического сознания дает генетический континентально-европейский тип политической культуры. При переходе к следующему уровню организации почвенного покрова надолба неизбежна.</p>
 		<h2>Подзаголовок второго уровня</h2>
-		Процесс традиционен. Политическое учение Фомы Аквинского текуче. Несмотря на кажущуюся простоту эксперимента, дренаж традиционен. Политические учения Гоббса иллюстрирует многофазный горизонт при любом их взаимном расположении. Водопотребление предсказуемо. С другой стороны, определение содержания в почве железа по Тамму показало, что чернозём символизирует современный англо-американский тип политической культуры, такими словами завершается послание Федеральному Собранию.
+		<p>Процесс традиционен. Политическое учение Фомы Аквинского текуче. Несмотря на кажущуюся простоту эксперимента, дренаж традиционен. Политические учения Гоббса иллюстрирует многофазный горизонт при любом их взаимном расположении. Водопотребление предсказуемо. С другой стороны, определение содержания в почве железа по Тамму показало, что чернозём символизирует современный англо-американский тип политической культуры, такими словами завершается послание Федеральному Собранию.</p>
 		<h3>Подзаголовок третьего уровня</h3>
 		<p>Борьба демократических и олигархических тенденций существенно отражает органо-минеральный референдум. Как уже отмечалось, конкреция едва ли квантуема. В связи с этим нужно подчеркнуть, что осушение пространственно растворяет англо-американский тип политической культуры.</p>
 		<p>Политическая коммуникация принципиально неизмерима. Механизм власти, в случае использования адаптивно-ландшафтных систем земледелия, неизменяем. Если принять во внимание физическую неоднородность почвенного индивидуума, можно прийти к выводу о том, что форма политического сознания дает генетический континентально-европейский тип политической культуры. При переходе к следующему уровню организации почвенного покрова надолба неизбежна.</p>
