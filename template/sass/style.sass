@@ -1,9 +1,13 @@
+@import "../libs/slick-carousel/slick/slick.css"
+@import "../libs/slick-carousel/slick/slick-theme.css"
+@import "../libs/fancybox/dist/jquery.fancybox.css"
+@import "sprite.sass"
 @import "grid.sass"
 @import "fonts.sass"
 
 $color-1: #000
-$font-size: 16px
-$font-family-1: 'GothamPro', sans-serif
+$font-size: 12px
+$font-family-1: 'Gotham Pro', sans-serif
 $transition-speed: .3s
 
 *
@@ -45,15 +49,19 @@ a
 	transition: $transition-speed
 
 
-.button
+.icon
 	display: inline-block
+	vertical-align: middle
+
+
+.button
+	display: block
 	color: $color-1
-	background: white
-	padding: 5px 10px
 	cursor: pointer
 	font-size: $font-size
 	font-family: $font-family-1
-	
+	text-align: center
+	background-image: linear-gradient(to top, #5d942a 0%, #70ae36 100%)
 
 
 /* Input */
@@ -63,3 +71,510 @@ a
 	border: 1px solid gray
 	
 
+
+
+.header
+	color: white
+	background-color: #1792ba
+	padding-top: 35px
+	padding-bottom: 160px
+	border-bottom: 3px solid #70ae36
+	a
+		color: white
+	&__content
+
+	&__title
+		font-size: 50px
+		line-height: 52px
+		font-weight: 500
+		text-transform: uppercase
+		margin-bottom: 23px
+	&__city
+		font-size: 40px
+		margin-bottom: 27px
+	&__text
+		font-size: 16px
+		max-width: 430px
+		line-height: 22px
+		margin-bottom: 70px
+	&__button
+		width: 442px
+		height: 58px
+		background-color: #4e831e
+		text-align: center
+		font-weight: 500
+		font-size: 20px
+		color: white
+		padding: 15px
+		border-radius: 40px
+		img
+			width: 28px
+			height: 27px
+			display: inline-block
+			vertical-align: middle
+		span
+			margin-left: 25px
+.panel
+	margin-bottom: 65px
+
+.logo
+	width: 243px
+	height: 154px
+	margin-right: 57px
+
+.feedback
+	padding-top: 40px
+	.phone
+		margin-bottom: 15px
+		&__title
+			font-size: 11px
+			margin-bottom: 8px
+		&__value
+			font-weight: 500
+			font-size: 24px
+	.callback
+		width: 180px
+		height: 38px
+		color: white
+		line-height: 38px
+		border-radius: 4px
+		text-align: center
+		background-color: #77c23e
+		font-size: 14px
+		font-weight: 500
+
+.about
+	margin-top: -58px
+	margin-bottom: 45px
+	&__persona
+		width: 180px
+		margin-right: 60px
+	&__text
+		margin-top: 100px
+		width: 390px
+		font-size: 13px
+		line-height: 21px
+		position: relative
+		&:before
+			content: '“'
+			font-weight: 900
+			line-height: 21px
+			font-size: 32px
+			position: absolute
+			top: 7px
+			left: -29px
+	&__steps
+		float: right
+		width: 240px 
+		padding-top: 31px
+.persona
+	&__img
+		border: 3px solid white
+		width: 186px
+		margin-bottom: 15px
+		margin-left: -3px
+		img
+			display: block
+			max-width: 100%
+	&__name
+		font-size: 18px
+		font-weight: 500
+		line-height: 21px
+		margin-bottom: 10px
+
+	&__desc
+		margin-bottom: 21px
+		font-size: 11px
+		line-height: 14px
+
+	&__text
+		margin-bottom: 15px
+
+	&__button
+		width: 180px
+		line-height: 38px
+		border-radius: 4px
+		background-color: #77c23e
+		font-size: 14px
+		font-weight: 500
+		color: white
+
+
+.step
+	background-color: #70ae36
+	margin-bottom: 25px
+	position: relative
+	padding: 31px 19px 36px 35px
+	&:first-of-type
+		.step__count
+			left: -3%
+	&:last-of-type
+		margin-bottom: 0
+	&__count
+		font-size: 60px
+		color: #46731c
+		font-weight: 500
+		position: absolute
+		top: 25%
+		left: -4%
+	&__name
+		font-size: 14px
+		line-height: 17px
+		font-weight: 500
+		color: #ffffff
+
+.certificates
+	position: relative
+	text-align: center
+	margin-bottom: 55px
+	&__title
+		font-size: 16px
+		padding-top: 3px
+		font-weight: 500
+		color: #188aae
+		width: 276px
+		margin-left: auto
+		margin-right: auto
+		background: white
+		margin-bottom: 37px
+		&:before
+			z-index: -1
+			content: ''
+			width: 940px
+			height: 1px
+			background-color: #a9cdd9
+			opacity: 0.6
+			display: block
+			position: absolute
+			top: 8px
+			left: 15px
+	&__list
+		margin-left: -10px
+		margin-right: -10px
+		margin-bottom: 10px
+	&__all
+		font-size: 12px
+		font-weight: 500
+		margin-bottom: 12px
+		span
+			color: #6ba733
+			padding-bottom: 1px
+			border-bottom: 1px dotted #6ba733
+			cursor: pointer
+	&__desc
+		color: #8cb8c6
+		font-weight: 400
+		line-height: 21px
+		.icon
+			margin-right: 9px
+
+.certificate
+	display: inline-block
+	width: 156px
+	line-height: 215px
+	height: 215px
+	border: 1px solid transparent
+	vertical-align: top
+	transition: .3s
+	cursor: pointer
+	&:hover
+		border: 1px solid #1689ae	
+	img
+		display: inline-block
+		vertical-align: middle
+
+.calc
+	&__wrap
+		padding: 35px 75px 45px
+		border: 5px solid #83b258
+		margin-left: -35px
+		margin-right: -35px
+		&:after
+			position: absolute
+			display: block
+			content: ''
+			background: url('../img/bg/calc.png') no-repeat 
+			width: 216px
+			height: 466px
+			top: -11px
+			right: 50px
+
+	&__title
+		font-size: 32px
+		line-height: 39px
+		font-weight: 500
+		margin-bottom: 30px
+		span
+			color: #70b138
+	&__subtitle
+		font-size: 18px
+		font-weight: 500
+		line-height: 21px
+
+	.radio-group
+		margin-top: 13px
+		font-size: 0
+		.radio
+			display: inline-block
+			margin-right: 10px
+			&:last-of-type
+				margin-right: 0
+	&__config
+		width: 261px
+		margin-right: 60px
+
+	&__counts
+		margin-top: 20px
+		margin-bottom: 20px
+		padding-top: 12px
+		padding-bottom: 20px
+		border-top: 1px solid #d0d0d0
+		border-bottom: 1px solid #d0d0d0
+
+	&__button
+		width: 220px
+		height: 51px
+		line-height: 51px
+		border-radius: 2px
+		font-size: 20px
+		font-weight: 500
+		color: white
+
+	&__result
+		
+
+
+
+.result
+	&__wrap
+		position: relative
+		color: white
+		background-color: #65a42f
+		width: 340px 
+		margin-top: 18px
+
+
+	&__text
+		font-size: 14px
+		line-height: 20px
+		font-weight: 500
+		text-align: center
+		width: 235px
+		margin-left: auto
+		margin-right: auto
+		padding-top: 80px
+		padding-bottom: 97px
+	&__content
+		display: none
+		padding: 15px
+		p
+			font-weight: 500
+			line-height: 17px
+			font-size: 13px
+
+	&__table
+		margin-bottom: 12px
+		.row
+			border-top: 1px solid white
+			&:last-of-type
+				border-bottom: 1px solid white
+		.col
+			height: 52px
+			border-left: 1px solid white
+			padding: 13px 19px
+			font-size: 14px
+			font-weight: 500
+			&:last-of-type
+				border-right: 1px solid white
+			&#imt, &#massa
+				font-weight: 900
+				padding-top: 10px
+				padding-bottom: 10px
+				font-size: 38px
+			&#massa
+				span
+					font-size: 30px
+
+
+	&__error
+		display: none
+		left: 0
+		top: 104%
+		width: 100%
+		position: absolute
+		border: 1px solid #f54735
+		font-size: 12px
+		line-height: 13px
+		color: #e22929
+		padding: 10px 27px 10px 43px
+		&:before
+			position: absolute
+			top: 11px
+			left: 18px
+			content: ''
+			@include sprite($error)
+
+
+.download
+	margin-top: 32px
+	padding-bottom: 50px
+	border-bottom: 1px solid #e1dcd7
+	&__wrap
+		width: 490px
+		margin-left: auto
+		margin-right: auto
+	&__icon, &__content
+		display: inline-block
+		vertical-align: top
+	&__icon, &__icon img
+		width: 30px
+		height: 29px
+	&__content
+		margin-left: 12px
+
+	&__title
+		font-size: 20px
+		font-weight: 500
+		margin-bottom: 7px
+		a
+			color: #1d1d1d
+			border-bottom: 1px solid #1d1d1d
+	&__desc
+		font-weight: 500
+		color: #525252
+
+
+
+.gallery
+	padding-top: 46px
+	&__title
+		font-size: 28px
+		text-align: center
+		position: relative
+		&:after
+			content: ''
+			display: block
+			margin-left: auto
+			margin-right: auto
+			width: 80px
+			height: 3px
+			background-color: #5d942a
+			border-radius: 1px
+			margin-top: 22px
+			margin-bottom: 20px
+
+
+	&__list
+
+
+	&__item
+
+
+	&__text
+		font-size: 0
+		p
+			display: inline-block
+			width: 50%
+			&:first-of-type
+				font-size: 14px
+				font-weight: 500
+			&:last-of-type
+				font-size: 12px
+				text-align: right
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.radio
+	display: block
+	input
+		display: none
+		&:checked + label
+			&:before
+				@include sprite($radio-active)
+	label
+		padding-left: 22px
+		position: relative
+		font-size: 14px
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			top: -4px
+			left: 0px
+			@include sprite($radio-default)
+
+.increment
+	position: relative
+	display: block
+	input
+		display: block
+		width: 60px
+		line-height: 36px
+		height: 32px
+		box-shadow: inset 1px 1px 1px rgba(211, 197, 200, 0.75)
+		border-radius: 0
+		border: 1px solid #cbcbcb
+		background-color: #ffffff
+		padding-left: 15px
+		padding-right: 15px
+		font-size: 14px
+		font-family: "Gotham Pro"
+		font-weight: 400
+	&__plus, &__minus
+		position: absolute
+		width: 0
+		height: 0
+		border-style: solid
+		right: 6px
+		cursor: pointer
+	&__plus
+		top: 10px
+		border-width: 0 4px 4px 4px
+		border-color: transparent transparent #60982c transparent
+	&__minus
+		bottom: 10px
+		border-width: 4px 4px 0 4px
+		border-color: #60982c transparent transparent transparent
+
+	&_error
+		input
+			border-color: #ff6060
+
+
+.line
+	font-size: 0 
+	line-height: 32px
+	margin-bottom: 14px
+	&:last-of-type
+		margin-bottom: 0
+	.text
+		&-before
+			display: inline-block
+			width: 130px
+			font-size: 16px
+			font-weight: 500
+			vertical-align: middle
+		&-after
+			display: inline-block
+			font-size: 14px
+			margin-left: 11px
+			vertical-align: middle
+
+	.increment
+		display: inline-block
+		vertical-align: middle

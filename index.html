@@ -29,7 +29,7 @@
 			<div class="header__city">во Владивостоке</div>
 			<div class="header__text">Стройная, подтянутая фигура – мечта любой женщины. Война с лишними килограммами ведется постоянно, и не видно ей конца и края.</div>
 		</div>
-		<div class="header__button button button-lg">рассчитать ваш идеальный вес</div>
+		<div class="header__button button button-lg"><img src="upload/icons/ves.svg" alt=""><span>рассчитать ваш идеальный вес</span></div>
 	</div>
 </div>
 <div class="main">
@@ -63,74 +63,74 @@
 		<div class="container">
 			<div class="certificates__title">СЕРТИФИКАТЫ И ДИПЛОМЫ</div>
 			<div class="certificates__list">
-				<div class="certificate"><img src="upload/certificates/1.png" alt=""></div>
-				<div class="certificate"><img src="upload/certificates/2.png" alt=""></div>
-				<div class="certificate"><img src="upload/certificates/3.png" alt=""></div>
-				<div class="certificate"><img src="upload/certificates/3.png" alt=""></div>
-				<div class="certificate"><img src="upload/certificates/1.png" alt=""></div>
-				<div class="certificate"><img src="upload/certificates/2.png" alt=""></div>
+				<a href="upload/certificates/1.png" data-fancybox="certificates" class="certificate"><img src="upload/certificates/1.png" alt=""></a>
+				<a href="upload/certificates/2.png" data-fancybox="certificates" class="certificate"><img src="upload/certificates/2.png" alt=""></a>
+				<a href="upload/certificates/3.png" data-fancybox="certificates" class="certificate"><img src="upload/certificates/3.png" alt=""></a>
+				<a href="upload/certificates/3.png" data-fancybox="certificates" class="certificate"><img src="upload/certificates/3.png" alt=""></a>
+				<a href="upload/certificates/1.png" data-fancybox="certificates" class="certificate"><img src="upload/certificates/1.png" alt=""></a>
+				<a href="upload/certificates/2.png" data-fancybox="certificates" class="certificate"><img src="upload/certificates/2.png" alt=""></a>
 			</div>
 			<div class="certificates__all"><span>показать ещё</span></div>
-			<div class="certificates__desc"><i></i><span>кликните на изображение для просмотра</span></div>
+			<div class="certificates__desc"><i class="icon icon-magniffic-glass"></i><span>кликните на изображение для просмотра</span></div>
 		</div>
 	</div>
 	<div class="calc">
 		<div class="container">
-			<div class="calc__title">Рассчитайте ваш <span>идеальный вес</span></div>
-			<div class="calc__wrap row">
-				<div class="calc__config col">
-					<div class="calc__subtitle">Ваш пол</div>
-					<div class="radio-group">
-						<div class="radio"><input type="radio" name="calc" value="1" id="calc-radio-1"><label for="calc-radio-1">Женский</label></div>
-						<div class="radio"><input type="radio" name="calc" value="2" id="calc-radio-2"><label for="calc-radio-2">Мужской</label></div>
-					</div>
-					<div class="calc__counts">
-						<div class="line">
-							<p class="text-before">Возраст</p>
-							<div class="increment">
-								<input type="text" value="10">
-								<div class="increment__plus"></div><div class="increment__minus"></div>
-							</div>
-							<p class="text-after">лет</p>
+			<div class="calc__wrap">
+				<div class="calc__title">Рассчитайте ваш <span>идеальный вес</span></div>
+				<div class="calc__table row">
+					<div class="calc__config col">
+						<div class="calc__subtitle">Ваш пол</div>
+						<div class="radio-group">
+							<div class="radio"><input type="radio" name="calc" value="1" id="calc-radio-1" checked="checked"><label for="calc-radio-1">Женский</label></div>
+							<div class="radio"><input type="radio" name="calc" value="2" id="calc-radio-2"><label for="calc-radio-2">Мужской</label></div>
 						</div>
-						<div class="line">
-							<p class="text-before">Рост</p>
-							<div class="increment">
-								<input type="text" value="150">
-								<div class="increment__plus"></div><div class="increment__minus"></div>
-							</div>
-							<p class="text-after">см</p>
-						</div>
-						<div class="line">
-							<p class="text-before">Текущий вес</p>
-							<div class="increment">
-								<input type="text" value="50">
-								<div class="increment__plus"></div><div class="increment__minus"></div>
-							</div>
-							<p class="text-after">кг</p>
-						</div>
-					</div>
-					<div class="calc__button button button-xs">рассчитать</div>
-				</div>
-				<div class="calc__result result col">
-					<div class="calc__subtitle">Ваш результат:</div>
-					<div class="result__wrap">
-						<div class="result__text">Введите значения в поля слева, <br />и нажмите кнопку “рассчитать”</div>
-						<div class="result__content">
-							<div class="result__table">
-								<div class="row w2">
-									<div class="col">Индекс <br />массы тела</div>
-									<div class="col">Норма <br />веса</div>
+						<div class="calc__counts">
+							<div class="line">
+								<p class="text-before">Возраст</p>
+								<div class="increment">
+									<input type="text" value="10">
+									<div class="increment__plus"></div><div class="increment__minus"></div>
 								</div>
-								<div class="row w2">
-									<div class="col">25.4</div>
-									<div class="col"><span>54</span> кг</div>
+								<p class="text-after">лет</p>
+							</div>
+							<div class="line">
+								<p class="text-before">Рост</p>
+								<div class="increment increment_error">
+									<input type="text" value="150">
+									<div class="increment__plus"></div><div class="increment__minus"></div>
 								</div>
+								<p class="text-after">см</p>
+							</div>
+							<div class="line">
+								<p class="text-before">Текущий вес</p>
+								<div class="increment">
+									<input type="text" value="50">
+									<div class="increment__plus"></div><div class="increment__minus"></div>
+								</div>
+								<p class="text-after">кг</p>
 							</div>
 						</div>
-						<div class="result__error">
-							<i></i>
-							<p>заполните пожалуйста все поля и нажмите кнопку “рассчитать”</p>
+						<div class="calc__button button button-xs">рассчитать</div>
+					</div>
+					<div class="calc__result result col">
+						<div class="calc__subtitle">Ваш результат:</div>
+						<div class="result__wrap">
+							<div class="result__text">Введите значения в поля слева, <br />и нажмите кнопку “рассчитать”</div>
+							<div class="result__content">
+								<div class="result__table">
+									<div class="row w2">
+										<div class="col">Индекс <br />массы тела</div>
+										<div class="col">Норма <br />веса</div>
+									</div>
+									<div class="row w2">
+										<div class="col" id="imt">25.4</div>
+										<div class="col" id="massa">54 <span>кг</span></div>
+									</div>
+								</div>
+								<p>ИМТ в диапазоне 18,5-24,9 указывает на здоровый вес. Нужно постараться, чтобы ИМТ находился в середине этого диапазона, что даст возможность иметь наиболее привлекательную фигуру и быть подальше от шансов выйти за рамки.</p>
+							</div>
+							<div class="result__error">заполните пожалуйста все поля и нажмите кнопку “рассчитать”</div>
 						</div>
 					</div>
 				</div>
@@ -139,10 +139,12 @@
 	</div>
 	<div class="download">
 		<div class="container">
-			<div class="download__icon"><img src="upload/icons/download.svg" alt=""></div>
-			<div class="download__content">
-				<div class="download__title">скачать таблицу калорийности продуктов</div>
-				<div class="download__desc">формат pdf, 350 Кб.</div>
+			<div class="download__wrap">
+				<div class="download__icon"><img src="upload/icons/download.svg" alt=""></div>
+				<div class="download__content">
+					<div class="download__title"><a href="">скачать таблицу калорийности продуктов</a></div>
+					<div class="download__desc">формат pdf, 350 Кб.</div>
+				</div>
 			</div>
 		</div>
 	</div>

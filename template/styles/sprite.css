@@ -1,0 +1,41 @@
+.icon-arrow-down {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -38px;
+  width: 16px;
+  height: 11px; }
+
+.icon-close {
+  background-image: url(../img/sprite.png);
+  background-position: -38px 0px;
+  width: 14px;
+  height: 14px; }
+
+.icon-error {
+  background-image: url(../img/sprite.png);
+  background-position: -16px -22px;
+  width: 14px;
+  height: 15px; }
+
+.icon-magniffic-glass {
+  background-image: url(../img/sprite.png);
+  background-position: -38px -14px;
+  width: 14px;
+  height: 14px; }
+
+.icon-phone {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 22px;
+  height: 22px; }
+
+.icon-radio-active {
+  background-image: url(../img/sprite.png);
+  background-position: -22px 0px;
+  width: 16px;
+  height: 16px; }
+
+.icon-radio-default {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -22px;
+  width: 16px;
+  height: 16px; }
