@@ -70,7 +70,8 @@ a
 	padding: 5px 10px
 	border: 1px solid gray
 	
-
+.popup
+	display: none
 
 
 .header
@@ -413,6 +414,14 @@ a
 			left: 18px
 			content: ''
 			@include sprite($error)
+		span
+			&:after
+				display: inline
+				content: ', '
+				margin-right: 6px
+			&:last-of-type
+				&:after
+					display: none
 
 
 .download
@@ -447,6 +456,9 @@ a
 
 .gallery
 	padding-top: 46px
+	padding-bottom: 47px
+	position: relative
+	border-bottom: 1px solid #e1dcd7
 	&__title
 		font-size: 28px
 		text-align: center
@@ -468,13 +480,33 @@ a
 
 
 	&__item
+		opacity: .73
+		padding-top: 150px
+	&__img
+		img
+			width: 300px
+			// transition: .3s
+	.slick-active
+		opacity: 1
+		padding: 19px
+		border: 1px solid #e1e1e1
+		margin-left: 28px
+		margin-right: 28px
+		img
+			width: 610px
+		.gallery__text
+			opacity: 1
+
 
 
 	&__text
 		font-size: 0
+		margin-top: 19px
+		opacity: 0
 		p
 			display: inline-block
 			width: 50%
+			vertical-align: top
 			&:first-of-type
 				font-size: 14px
 				font-weight: 500
@@ -482,7 +514,212 @@ a
 				font-size: 12px
 				text-align: right
 
+	&__arrows
+		position: absolute
+		width: 100%
+		top: 57%
+		left: 0
+		.slick-arrow
+			top: auto
+			width: 62px
+			height: 62px
+			border: 3px solid #5d942a
+			background-color: #ffffff
+			border-radius: 50%
+			&:before
+				display: none
+			img
+				width: 27px
+				height: 27px
+				position: relative
+		.slick-prev
+			left: 110px
+			img
+				right: 1px
+		.slick-next
+			right: 110px
+			img
+				left: 2px
 
+
+
+.schedule
+	padding-top: 46px
+	text-align: center
+	margin-bottom: 50px
+	&__title
+		font-size: 28px
+		margin-bottom: 19px
+
+	&__desc
+		margin-bottom: 35px
+		font-size: 13px	
+
+	&__table
+		width: 100%
+		margin-left: -1px
+		margin-right: -1px
+		font-size: 13px
+		.col
+			width: (100% / 7)
+			
+	&__item
+		border-left: 1px solid white
+		border-right: 1px solid white
+			
+		&:nth-of-type(odd)
+			.schedule__day
+				background: #63b33b 
+			.schedule__time
+				background: #ebebeb
+	&__day
+		color: white
+		line-height: 29px
+		background: #4c9429
+		border-bottom: 2px solid white
+		font-weight: 500
+
+	&__time
+		line-height: 50px
+		background: #f6f6f6
+		
+
+
+.form
+	color: white
+	padding-top: 48px
+	padding-bottom: 50px
+	border-bottom: 3px solid #6aa632
+	background: url('../img/bg/form.png') no-repeat top right, #1588ae
+	&__wrap
+		position: relative
+		border: 3px solid white
+		border-top: none
+		padding: 0 75px 30px
+	&__title
+		position: relative
+		text-align: center
+		font-size: 28px
+		font-weight: 500
+		margin-bottom: 33px
+		top: -10px
+		&:before, &:after
+			display: block
+			position: absolute
+			content: ''
+			width: 30%
+			height: 3px
+			background: white
+			top: 10px
+		&:before
+			left: -75px
+		&:after
+			right: -75px
+
+	&__subtitle
+		font-size: 16px
+		font-weight: 500
+		margin-bottom: 12px
+	&__elements
+		font-size: 0
+	.input
+		width: 321px
+		height: 47px
+		box-shadow: inset 1px 1px 1px rgba(211, 197, 200, 0.75)
+		border-radius: 5px
+		border: 1px solid #167792
+		background-color: #ffffff
+		font-size: 15px
+		padding-left: 15px
+		padding-right: 15px
+		&-phone
+			width: 199px
+	&__button
+		display: inline-block
+		width: 180px
+		line-height: 52px
+		border-radius: 3px
+		font-size: 20px
+		font-weight: 500
+		color: white
+		margin-right: 29px
+		vertical-align: top
+	&__regulations
+		vertical-align: top
+		display: inline-block
+		padding-top: 11px
+		font-size: 10px
+		line-height: 14px
+		a
+			color: white
+			font-weight: 500
+			&:hover
+				border-color: white
+
+.elements
+	margin-bottom: 18px
+	&__item
+		&:first-of-type
+			margin-right: 55px
+
+
+.footer
+	&__top
+		padding-top: 34px
+		padding-bottom: 38px
+		background: url('../img/bg/footer-shadow.png') repeat-x bottom center
+	&__desc
+		font-size: 22px
+		line-height: 28px
+		text-transform: uppercase
+		font-weight: 500
+		margin-right: 74px
+	&__contacts
+		margin-right: 64px	
+		.phone
+			&__title
+				margin-bottom: 9px
+			&__value
+				font-size: 24px
+				font-weight: 500
+				margin-bottom: 11px
+		.email
+			a
+				font-size: 14px
+				color: #156c85
+				&:hover
+					border-color: #156c85
+
+	&__address
+		.address
+			&__title
+				margin-bottom: 13px
+			&__text
+				font-size: 16px
+				font-weight: 500
+				margin-bottom: 13px
+			&__link
+				a
+					color: #046383
+					&:hover
+						border-color: #046383
+	&__bottom
+		padding-top: 24px
+		padding-bottom: 20px
+		font-size: 11px
+		color: #1b1b1b
+	&__dev
+		margin-left: 105px
+		a
+			border-color: #1b1b1b
+			&:hover
+				border-color: transparent
+
+
+
+
+br.hidden-br
+	display: none
 
 
 
@@ -511,6 +748,7 @@ a
 		position: relative
 		font-size: 14px
 		position: relative
+		cursor: pointer
 		&:before
 			content: ''
 			position: absolute

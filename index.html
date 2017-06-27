@@ -89,15 +89,15 @@
 							<div class="line">
 								<p class="text-before">Возраст</p>
 								<div class="increment">
-									<input type="text" value="10">
+									<input type="text" maxlength="2" value="20" name="age">
 									<div class="increment__plus"></div><div class="increment__minus"></div>
 								</div>
 								<p class="text-after">лет</p>
 							</div>
 							<div class="line">
 								<p class="text-before">Рост</p>
-								<div class="increment increment_error">
-									<input type="text" value="150">
+								<div class="increment">
+									<input type="text" maxlength="3" value="150" name="growth">
 									<div class="increment__plus"></div><div class="increment__minus"></div>
 								</div>
 								<p class="text-after">см</p>
@@ -105,7 +105,7 @@
 							<div class="line">
 								<p class="text-before">Текущий вес</p>
 								<div class="increment">
-									<input type="text" value="50">
+									<input type="text" maxlength="3" value="60" name="weight">
 									<div class="increment__plus"></div><div class="increment__minus"></div>
 								</div>
 								<p class="text-after">кг</p>
@@ -130,7 +130,7 @@
 								</div>
 								<p>ИМТ в диапазоне 18,5-24,9 указывает на здоровый вес. Нужно постараться, чтобы ИМТ находился в середине этого диапазона, что даст возможность иметь наиболее привлекательную фигуру и быть подальше от шансов выйти за рамки.</p>
 							</div>
-							<div class="result__error">заполните пожалуйста все поля и нажмите кнопку “рассчитать”</div>
+							<div class="result__error">Укажите верное значение в поле: <p></p></div>
 						</div>
 					</div>
 				</div>
@@ -180,6 +180,9 @@
 				</div>
 			</div>
 		</div>
+		<div class="gallery__arrows">
+			<div class="container"></div>
+		</div>
 	</div>
 	<div class="schedule">
 		<div class="container">
@@ -215,25 +218,25 @@
 					<div class="schedule__time">Выходной</div>
 				</div>
 			</div>
-		<div class="container">
+		</div>
 	</div>
 	<div class="form">
 		<div class="container">
 			<div class="form__wrap">
 				<div class="form__title">ЗАПИШИТЕСЬ НА СЕАНС</div>
-				<div class="form__elements elements">
+				<div class="form__elements elements row">
 					<div class="elements__item col">
-						<p>Ваше имя</p>
+						<p class="form__subtitle">Ваше имя</p>
 						<input type="text" class="elements__input input">
 					</div>
 					<div class="elements__item col">
-						<p>Телефон</p>
+						<p class="form__subtitle">Телефон</p>
 						<input type="text" class="elements__input input input-phone">
 					</div>
 				</div>
 				<div class="form__submit">
-					<button class="form__button button button-xs"></button>
-					<div class="form__regulations">нажимая кнопку “отправить” вы принимаете <br />соглашение на <span>обработку информации</span></div>
+					<button class="form__button button button-xs">отправить</button>
+					<div class="form__regulations">нажимая кнопку “отправить” вы принимаете <br />соглашение на <a href="">обработку информации</a></div>
 				</div>
 			</div>
 		</div>
