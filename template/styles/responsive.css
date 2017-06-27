@@ -142,7 +142,18 @@
   .result__error {
     position: relative;
     background: white;
-    padding-right: 5px; } }
+    padding-right: 5px; }
+  #popup-agreements {
+    width: 95% !important;
+    padding-left: 15px;
+    padding-right: 15px; }
+    #popup-agreements .popup__title {
+      font-size: 18px; }
+    #popup-agreements .popup__wrap {
+      position: relative;
+      padding-right: 10px !important;
+      margin-bottom: 10px;
+      height: 300px !important; } }
 
 @media screen and (max-width: 690px) {
   .header {
